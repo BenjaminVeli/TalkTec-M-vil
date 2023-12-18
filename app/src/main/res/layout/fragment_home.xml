@@ -1,0 +1,91 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color_background"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".HomeFragment">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            app:iss_auto_cycle="true"
+            app:iss_delay="1000"
+            app:iss_period="1000"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/create_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:text="Crear publicación"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EFEEEE"/>
+
+                <EditText
+                    android:id="@+id/txtNombre"
+                    android:layout_width="370dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5"
+                    android:ems="10"
+                    android:hint="¿Qué estás pensando?"
+                    android:inputType="text"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent" />
+
+                <Button
+                    android:id="@+id/btnGuardar"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:onClick="GuardarDatos"
+                    android:text="Publicar"
+                    android:backgroundTint="@color/color_button"
+                    app:cornerRadius="4dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

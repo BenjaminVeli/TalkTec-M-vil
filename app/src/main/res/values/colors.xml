@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_logo">#1A202C</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#0A4791</color>
+    <color name="color_button">#3855D1</color>
+    <color name="color_background">#f0f2f5</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="input">#EEEEEE</color>
+    <color name="link">#3E54AC</color>
+    <color name="lavender">#0A4791</color>
+    <color name="background_autentication">#EEF5FF</color>
+    <color name="color_h1">#3855D1</color>
+    <color name="color_h2">#8D3855D1</color>
+    <color name="transparent">#00000000</color>
+    <color name="button_text">#6A7078</color>
+    <color name="colorAccent">#008170</color>
+    <color name="department">#3887BE</color>
+</resources>

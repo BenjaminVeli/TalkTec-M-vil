@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ConfigurationFragment">
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/vd_user_circle" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/emailEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/vd_lock"
+        android:hint="PASSWORD"
+        android:padding="8dp"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/passwordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/color_button"
+        android:text="Update"
+        android:textSize="13sp"
+        app:cornerRadius="5dp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/profileImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/vd_email"
+        android:drawablePadding="8dp"
+        android:hint="EMAIL"
+        android:padding="8dp"
+        android:textSize="15sp" />
+
+</RelativeLayout>

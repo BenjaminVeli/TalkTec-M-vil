@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tecsup" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vector" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/profile_user" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/departmentHeaderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="departamento"
+                android:textColor="@color/department"
+                android:layout_gravity="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/navHeaderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nombre"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/codenavHeaderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="codigo"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/codebar" />
+
+</FrameLayout>
+

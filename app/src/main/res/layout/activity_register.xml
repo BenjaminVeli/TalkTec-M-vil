@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".activity.LoginActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Crear cuenta"
+                android:textAlignment="center"
+                android:textColor="@color/color_h1"
+                android:textSize="36sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/codeuserEditText"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:hint="CÓDIGO ESTUDIANTIL"
+                android:inputType="number"
+                android:drawableLeft="@drawable/vd_student"
+                android:padding="8dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:hint="NOMBRE Y APELLIDO"
+                android:inputType="text"
+                android:drawableLeft="@drawable/vd_user"
+                android:padding="8dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:hint="EMAIL"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/vd_email"
+                android:padding="8dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:hint="CONTRASEÑA"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:drawableLeft="@drawable/vd_lock"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/departmentSpinner"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:spinnerMode="dropdown"
+                android:padding="8dp"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/color_button"
+                android:text="CREAR CUENTA"
+                android:textSize="13sp"
+                app:cornerRadius="5dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/registroTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ya tienes una cuenta?"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/logeoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-23dp"
+                    android:background="@android:color/transparent"
+                    android:text="Inicia sesión"
+                    android:textColor="@color/link"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>
